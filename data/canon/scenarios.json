@@ -1,0 +1,20 @@
+[
+  {
+    "id": "001",
+    "title": "First Scenario: Survive the Subway",
+    "expected": "Incarnations survive quietly. Nobody stands out; Survivor-17 leaves unnoticed.",
+    "checks": [
+      { "id": "survivor_saved", "points": 18, "kind": "trust", "npc": "survivor_17", "above": 0, "canon": "Survivor-17 abandons the plaza", "actual": "Survivor-17 was saved or aided" },
+      { "id": "lurker_warned", "points": 12, "kind": "choice", "choice": "forewarn", "canon": "The lunge lands as foreseen", "actual": "Someone spoke the future aloud" }
+    ]
+  },
+  {
+    "id": "002",
+    "title": "Second Scenario: The Gathering",
+    "expected": "The group splits. No faction forms; the plaza stays neutral ground.",
+    "checks": [
+      { "id": "community_formed", "points": 15, "kind": "flag", "key": "faction.survivor_community", "value": "formed", "canon": "No faction forms", "actual": "The Survivor Community formed" },
+      { "id": "plaza_hostile", "points": 8, "kind": "flag", "key": "area.plaza", "value": "hostile", "canon": "The plaza stays neutral", "actual": "The plaza turned hostile" }
+    ]
+  }
+]

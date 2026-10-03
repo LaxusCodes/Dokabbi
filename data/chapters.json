@@ -1,0 +1,203 @@
+[
+  {
+    "no": 3,
+    "defaultTitle": "The Price of Staying Together",
+    "titles": [
+      { "when": { "flag": { "key": "faction.survivor_community", "value": "formed" } }, "title": "The Price of Staying Together" },
+      { "when": { "flag": { "key": "area.plaza", "value": "hostile" } }, "title": "The Cost of Walking Away" }
+    ],
+    "brief": [
+      { "when": { "flag": { "key": "faction.survivor_community", "value": "formed" } }, "line": "The Survivor Community exists because of this stream." },
+      { "when": { "flag": { "key": "area.plaza", "value": "hostile" } }, "line": "The plaza remembers being abandoned." },
+      { "when": { "relation": { "a": "iron_gate", "b": "veiled_ledger", "min": "Hostile" } }, "line": "Iron Gate and Veiled Ledger are openly hostile. The air tastes like coins and smoke." },
+      { "when": { "minBonds": 1 }, "line": "Somewhere in this stream, pairs have learned to survive together." },
+      { "when": { "minAttention": 15 }, "line": "Kim Dokja has noticed this server's existence." },
+      { "when": { "minAgendas": 1 }, "line": "A hidden agenda has surfaced. Factions move differently now." },
+      { "when": { "minDivergence": 40 }, "line": "The canon feels thin here. What was supposed to happen keeps failing to happen." }
+    ],
+    "paths": [
+      {
+        "id": "protect", "label": "Protect the community", "layer": "party",
+        "requires": { "minParty": 2 }, "weight": 3, "risk": "high",
+        "rewards": { "coins": 400, "xp": 80 },
+        "consequences": {
+          "flags": [["chapter3.protect", "taken"]],
+          "favor": { "silent_warden": 8 },
+          "trust": [{ "npc": "survivor_17", "delta": 20 }],
+          "nebulaRep": { "nebula": "iron_gate", "delta": 5 },
+          "story": "merciful",
+          "worldLine": "stood between the community and what came for it"
+        }
+      },
+      {
+        "id": "confront", "label": "Confront what comes alone", "layer": "individual",
+        "requires": {}, "weight": 2, "risk": "deadly",
+        "rewards": { "coins": 300, "xp": 70 },
+        "consequences": {
+          "flags": [["chapter3.confront", "taken"]],
+          "favor": { "veiled_trickster": 6 },
+          "story": "impossible",
+          "worldLine": "faced it alone"
+        }
+      },
+      {
+        "id": "gate_duty", "label": "Hold the line (Iron Gate objective)", "layer": "faction",
+        "requires": { "nebula": "iron_gate" }, "weight": 2, "risk": "high",
+        "rewards": { "coins": 350, "xp": 75 },
+        "consequences": {
+          "flags": [["chapter3.gate_duty", "taken"]],
+          "favor": { "judge_embers": 8 },
+          "nebulaRep": { "nebula": "iron_gate", "delta": 8 },
+          "worldLine": "held the Gate's line"
+        }
+      },
+      {
+        "id": "ledger_cut", "label": "Take the Ledger's cut (Veiled Ledger objective)", "layer": "faction",
+        "requires": { "nebula": "veiled_ledger" }, "weight": 2, "risk": "high",
+        "rewards": { "coins": 450, "xp": 65 },
+        "consequences": {
+          "flags": [["chapter3.ledger_cut", "taken"]],
+          "favor": { "whispering_broker": 8 },
+          "nebulaRep": { "nebula": "veiled_ledger", "delta": 8 },
+          "worldLine": "took the Ledger's cut"
+        }
+      },
+      {
+        "id": "eastern_route", "label": "Slip onto the eastern route", "layer": "hidden",
+        "requires": { "knowledgeAny": ["danger_east", "value_east"] }, "weight": 1, "risk": "unknown",
+        "rewards": { "coins": 500, "xp": 90 },
+        "consequences": {
+          "flags": [["chapter3.eastern_route", "taken"], ["area.east", "entered"]],
+          "story": "impossible",
+          "knowledge": "value_east",
+          "locks": [{ "path": "eastern_route", "reason": "Route alteration detected. The eastern crossing is no longer available." }],
+          "worldLine": "walked the route that was never meant to open"
+        }
+      },
+      {
+        "id": "defer", "label": "Let the stream decide (global)", "layer": "global",
+        "requires": {}, "weight": 1, "risk": "none",
+        "rewards": { "coins": 150, "xp": 40 },
+        "consequences": {
+          "flags": [["chapter3.defer", "taken"]],
+          "worldLine": "bowed to the stream's will"
+        }
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "defaultTitle": "What the Stream Remembers",
+    "titles": [
+      { "when": { "minAlters": 2 }, "title": "The Timeline That Bent" },
+      { "when": { "minBonds": 2 }, "title": "The Company It Keeps" }
+    ],
+    "brief": [
+      { "when": { "minAlters": 2 }, "line": "This stream has bent its timeline more than once. The stars are nervous." },
+      { "when": { "minBonds": 2 }, "line": "Bonded pairs walk this stream. Their Stories protect them." },
+      { "when": { "minSponsors": 3 }, "line": "Sponsored incarnations move through every scenario now." },
+      { "when": { "minWagers": 5 }, "line": "The audience wagers heavily on everything. Nothing here is private." }
+    ],
+    "paths": [
+      {
+        "id": "testify", "label": "Testify to what happened", "layer": "individual",
+        "requires": {}, "weight": 2, "risk": "low",
+        "rewards": { "coins": 300, "xp": 70 },
+        "consequences": {
+          "flags": [["chapter4.testify", "taken"]],
+          "favor": { "silent_warden": 5 },
+          "trust": [{ "npc": "plaza_runner", "delta": 10 }],
+          "worldLine": "spoke the stream's history aloud"
+        }
+      },
+      {
+        "id": "cover", "label": "Cover for your party", "layer": "party",
+        "requires": { "minParty": 2 }, "weight": 3, "risk": "high",
+        "rewards": { "coins": 420, "xp": 85 },
+        "consequences": {
+          "flags": [["chapter4.cover", "taken"]],
+          "story": "merciful",
+          "nebulaRep": { "mine": true, "delta": 4 },
+          "worldLine": "took the blame so the party could run"
+        }
+      },
+      {
+        "id": "audit", "label": "Audit the faction ledgers", "layer": "faction",
+        "requires": { "minRank": "Affiliate" }, "weight": 2, "risk": "medium",
+        "rewards": { "coins": 380, "xp": 75 },
+        "consequences": {
+          "flags": [["chapter4.audit", "taken"]],
+          "favor": { "whispering_broker": 5 },
+          "worldLine": "read what the factions tried to hide"
+        }
+      },
+      {
+        "id": "vigil_names", "label": "Read the vigil list", "layer": "hidden",
+        "requires": { "knowledge": "agenda_iron_gate_warden_vigil", "relationship": { "char": "kim_dokja", "min": "Friendly" } }, "weight": 1, "risk": "unknown",
+        "rewards": { "coins": 500, "xp": 95 },
+        "consequences": {
+          "flags": [["chapter4.vigil_names", "taken"]],
+          "favor": { "judge_embers": 6 },
+          "story": "impossible",
+          "worldLine": "learned who the Warden protects"
+        }
+      }
+    ]
+  },
+  {
+    "no": 5,
+    "defaultTitle": "The Price of Knowing",
+    "titles": [
+      { "when": { "minAttention": 30 }, "title": "The Reader Is Watching" },
+      { "when": { "minSponsors": 4 }, "title": "The Sponsored Stream" }
+    ],
+    "brief": [
+      { "when": { "minAttention": 30 }, "line": "Kim Dokja watches this server the way one watches a familiar passage read aloud wrong." },
+      { "when": { "minSponsors": 4 }, "line": "Half the stream wears a star's mark. The unsponsored feel the weight of it." },
+      { "when": { "relation": { "a": "iron_gate", "b": "veiled_ledger", "min": "Hostile" } }, "line": "The faction war distorts every probability in the area." }
+    ],
+    "paths": [
+      {
+        "id": "ask_reader", "label": "Ask the Reader what comes next", "layer": "individual",
+        "requires": {}, "weight": 2, "risk": "medium",
+        "rewards": { "coins": 320, "xp": 75 },
+        "consequences": {
+          "flags": [["chapter5.ask_reader", "taken"]],
+          "knowledge": "dokja_watching_you",
+          "worldLine": "asked Kim Dokja for the future"
+        }
+      },
+      {
+        "id": "refuse_answer", "label": "Refuse the answer", "layer": "individual",
+        "requires": {}, "weight": 1, "risk": "high",
+        "rewards": { "coins": 200, "xp": 90 },
+        "consequences": {
+          "flags": [["chapter5.refuse_answer", "taken"]],
+          "story": "impossible",
+          "worldLine": "refused the Reader's answer and walked blind"
+        }
+      },
+      {
+        "id": "plaza_truth", "label": "Speak the plaza's truth", "layer": "hidden",
+        "requires": { "knowledge": "foreknow_002" }, "weight": 1, "risk": "unknown",
+        "rewards": { "coins": 520, "xp": 100 },
+        "consequences": {
+          "flags": [["chapter5.plaza_truth", "taken"]],
+          "favor": { "veiled_trickster": 8 },
+          "story": "impossible",
+          "worldLine": "said aloud what the plaza was supposed to hide"
+        }
+      },
+      {
+        "id": "asset_work", "label": "Do the faction's necessary work", "layer": "faction",
+        "requires": { "minRank": "Member" }, "weight": 2, "risk": "high",
+        "rewards": { "coins": 450, "xp": 85 },
+        "consequences": {
+          "flags": [["chapter5.asset_work", "taken"]],
+          "nebulaRep": { "mine": true, "delta": 6 },
+          "worldLine": "did what their faction could not be seen doing"
+        }
+      }
+    ]
+  }
+]

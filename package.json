@@ -1,0 +1,21 @@
+{
+  "name": "orv-discord-rpg",
+  "version": "0.1.0",
+  "description": "ORV-inspired Discord RPG — Star Stream simulator (fan project, original text only)",
+  "type": "module",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "deploy": "node src/deploy-commands.js",
+    "test": "node --test test/engine.test.js test/phase2.test.js test/phase3.test.js test/phase4.test.js test/phase5.test.js test/phase6.test.js test/phase7.test.js test/phase8.test.js test/phase9.test.js test/phase10.test.js test/prefix.test.js test/phase11.test.js test/phase12.test.js test/phase13.test.js test/phase14.test.js test/phase15.test.js test/lifecycle.test.js test/daily.test.js test/collection.test.js test/images.test.js test/characters.test.js test/companions.test.js test/titles.test.js test/market.test.js test/auction.test.js test/presence.test.js test/ux.test.js test/social.test.js test/seasons.test.js test/tutorial.test.js test/emojis.test.js test/deploy.test.js test/integration.test.js"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "^1.0.9",
+    "discord.js": "^14.18.0",
+    "dotenv": "^16.4.5",
+    "zod": "^3.23.8"
+  }
+}

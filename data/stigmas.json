@@ -1,0 +1,38 @@
+[
+  {
+    "id": "flames_judgment",
+    "name": "Flames of Judgment",
+    "bearer": "judge_embers",
+    "evolutions": [
+      { "level": 2, "uses": 5, "protects": 3, "hint": "Blood shared, shelter given." },
+      { "level": 3, "uses": 12, "protects": 8, "hint": "???" }
+    ]
+  },
+  {
+    "id": "playful_scheme",
+    "name": "Playful Scheme",
+    "bearer": "veiled_trickster",
+    "evolutions": [
+      { "level": 2, "uses": 5, "protects": 1, "hint": "The stream laughed with you." },
+      { "level": 3, "uses": 12, "protects": 4, "hint": "???" }
+    ]
+  },
+  {
+    "id": "dawns_aegis",
+    "name": "Dawn's Aegis",
+    "bearer": "silent_warden",
+    "evolutions": [
+      { "level": 2, "uses": 3, "protects": 5, "hint": "Stand between harm and others." },
+      { "level": 3, "uses": 10, "protects": 10, "hint": "???" }
+    ]
+  },
+  {
+    "id": "debts_due",
+    "name": "Debts Due",
+    "bearer": "whispering_broker",
+    "evolutions": [
+      { "level": 2, "uses": 6, "protects": 0, "hint": "Every debt collected." },
+      { "level": 3, "uses": 14, "protects": 3, "hint": "???" }
+    ]
+  }
+]

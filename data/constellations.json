@@ -1,0 +1,6 @@
+[
+  { "id": "judge_embers", "name": "Demon-like Judge of Embers", "theme": "judgment", "personality": "stern but fair" },
+  { "id": "veiled_trickster", "name": "Veiled Trickster", "theme": "schemes", "personality": "playful" },
+  { "id": "silent_warden", "name": "Silent Warden of Dawn", "theme": "protection", "personality": "quiet" },
+  { "id": "whispering_broker", "name": "Whispering Broker of Debts", "theme": "wagers", "personality": "manipulative" }
+]

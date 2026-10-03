@@ -1,0 +1,4 @@
+[
+  { "id": "subway_car", "name": "Subway Car", "danger": 2, "scenarios": ["001"] },
+  { "id": "station_plaza", "name": "Station Plaza", "danger": 3, "scenarios": ["002"] }
+]

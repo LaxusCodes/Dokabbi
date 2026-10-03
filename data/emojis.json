@@ -1,0 +1,22 @@
+{
+  "_comment": "ONE place for every emoji. Values may be unicode or Discord custom codes like <:dokja:123456789012345678> (upload in Developer Portal > Emojis, then type \\:name: in chat to copy the code). Admins can override any key live with /emoji set — overrides beat this file, this file beats built-ins.",
+  "titles": {},
+  "ranks": { "C": "▫️", "B": "🟩", "A": "🟦", "S": "🟪", "S+": "💜", "SS": "⭐", "SSS": "🌌" },
+  "rarities": { "Common": "▫️", "Uncommon": "🟩", "Rare": "💙", "Epic": "💜", "Unique": "🟨", "Legendary": "⭐", "Myth": "🌌" },
+  "roles": {
+    "Reader": "👁️", "Writer": "✍️", "Interpreter": "🗣️", "Archivist": "🗄️", "Oracle": "🔮", "Seeker": "🧭", "Herald": "📯", "Scribe": "📜", "Strategist": "♟️",
+    "Fighter": "⚔️", "Crusader": "🛡️", "Slayer": "🗡️", "Warmonger": "🔥", "Duelist": "🤺", "Brawler": "🥊", "Sword Saint": "🗡️", "Gambler": "🎲", "Antagonist": "😈", "Pit": "🕳️",
+    "Guardian": "🛡️", "Shield": "🛡️", "Warden": "🏰", "Monarch": "👑", "Queen": "👑", "Admiral": "⚓", "Soldier": "🎖️", "Guard": "💂", "Landlord": "🏘️", "Commander": "🎖️", "Leader": "👑",
+    "Healer": "❤️", "Medic": "➕", "Support": "💚", "Volunteer": "🙋", "Beastmaster": "🐺", "Elder": "🧓",
+    "Scout": "🔭", "Runner": "🏃", "Messenger": "✉️", "Gunner": "🔫", "Scavenger": "🎒",
+    "Plotter": "🎭", "Sage": "🧙", "Calamity": "☄️", "Tempest": "🌪️", "Tempter": "😏", "Reveler": "🍷", "Mirror": "🪞", "Reincarnator": "🔄", "Seraph": "😇", "Radiance": "🌟",
+    "Judge": "⚖️", "Prosecutor": "⚖️", "Artificer": "⚙️", "Agent": "🕵️",
+    "Teacher": "🍎", "Survivor": "🧍", "Sailor": "⛵", "Returnee": "🌀", "Dokkaebi": "👹"
+  },
+  "ui": {
+    "coins": "🪙", "hp": "❤️", "energy": "⚡", "star": "⭐", "fire": "🔥",
+    "swords": "⚔️", "shield": "🛡️", "book": "📖", "card": "🎴", "eye": "👁️",
+    "crown": "👑", "skull": "💀", "dice": "🎲", "globe": "🌌", "bell": "🔔",
+    "handshake": "🤝", "scroll": "📜", "gem": "💎", "trophy": "🏆", "satellite": "📡"
+  }
+}

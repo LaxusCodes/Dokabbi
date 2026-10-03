@@ -1,0 +1,5 @@
+[
+  { "id": "survivor_17", "name": "Survivor No. 17", "expected": "Leaves quietly. Owes nobody anything.", "divergedPoints": 10 },
+  { "id": "plaza_runner", "name": "Plaza Runner", "expected": "Vanishes after carrying one message.", "divergedPoints": 6 },
+  { "id": "kim_dokja", "name": "Kim Dokja", "expected": "Reads. Does not intervene early.", "divergedPoints": 0 }
+]

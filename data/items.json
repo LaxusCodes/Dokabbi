@@ -1,0 +1,5 @@
+[
+  { "id": "iron_sword", "name": "Iron Sword", "grade": "Common", "slot": "Weapon", "bonus": 5 },
+  { "id": "reader_coat", "name": "Reader's Coat", "grade": "Rare", "slot": "Armor", "bonus": 4 },
+  { "id": "recovery_pill", "name": "Recovery Pill", "grade": "Common", "type": "Consumable", "bonus": 0 }
+]

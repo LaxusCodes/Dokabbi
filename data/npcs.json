@@ -1,0 +1,14 @@
+[
+  {
+    "id": "survivor_17",
+    "name": "Survivor No. 17",
+    "description": "A quiet passenger who remembers exactly who helped and who looked away.",
+    "baseTrust": 0
+  },
+  {
+    "id": "plaza_runner",
+    "name": "Plaza Runner",
+    "description": "A messenger who trades news of incarnations between groups.",
+    "baseTrust": 0
+  }
+]

@@ -1,0 +1,30 @@
+{
+  "id": "season_001",
+  "name": "The Stream Has Chosen",
+  "startsAt": "2026-09-01T00:00:00Z",
+  "endsAt": "2026-10-31T23:59:59Z",
+  "premise": "The Stream has opened a special reckoning. Every server faces the same question — but each server's history will decide what the question becomes.",
+  "chapters": [3, 4, 5, 6, 7, 8, 9],
+  "special": [
+    "Cooperation paths pay +10% while the season runs.",
+    "Hidden routes open easier for divergent servers."
+  ],
+  "scoring": [
+    { "id": "chronicle", "label": "Greatest Chronicle", "metric": "events", "weight": 1 },
+    { "id": "anomaly", "label": "Greatest Anomaly", "metric": "alters", "weight": 5 },
+    { "id": "valor", "label": "Scenario Victor", "metric": "clears", "weight": 2 },
+    { "id": "spectacle", "label": "Most Unexpected Outcome", "metric": "wagers", "weight": 2 },
+    { "id": "alliance", "label": "Greatest Alliance", "metric": "chapters", "weight": 3 }
+  ],
+  "rewards": {
+    "coins": 1000,
+    "card": {
+      "name": "[Witness of the First Choosing]",
+      "effect": "Present when the Stream chose. Season 001.",
+      "power": 5
+    }
+  },
+  "hidden": [
+    { "id": "rupture_witness", "description": "A server touches rupture during the season.", "metric": "maxDivergence", "gte": 70 }
+  ]
+}

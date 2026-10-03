@@ -1,0 +1,111 @@
+[
+  {
+    "id": "foreknow_001",
+    "kind": "future",
+    "title": "Foreknowledge: The Lurker's Lunge",
+    "body": "You have seen this subway before. The lurker feints left, then lunges low from the right. Anyone warned in time can turn its strike aside.",
+    "scenario_id": "001",
+    "probability_cost": 10,
+    "granted_by": "observe:subway"
+  },
+  {
+    "id": "pattern_lurker",
+    "kind": "observation",
+    "title": "Observation: Lurker Behavior",
+    "body": "The platform lurker grows bolder against isolated prey and hesitates before groups that hold formation.",
+    "scenario_id": "001",
+    "probability_cost": 0,
+    "granted_by": "observe:subway"
+  },
+  {
+    "id": "foreknow_002",
+    "kind": "future",
+    "title": "Foreknowledge: The Divided Plaza",
+    "body": "At the station plaza the group will split over which exit to take. The quieter exit hides a trap; the louder one hides witnesses.",
+    "scenario_id": "002",
+    "probability_cost": 10,
+    "granted_by": "observe:station"
+  },
+  {
+    "id": "danger_east",
+    "kind": "observation",
+    "title": "Fragment: The Eastern Route Is Dangerous",
+    "body": "Something nests in the dark past the second pillar on the eastern route. You would not walk it alone.",
+    "scenario_id": "002",
+    "probability_cost": 0,
+    "granted_by": "observe:station"
+  },
+  {
+    "id": "value_east",
+    "kind": "observation",
+    "title": "Fragment: Something Valuable Hides East",
+    "body": "Old-world supplies sit behind a shuttered kiosk on the eastern route — if anyone dares reach them.",
+    "scenario_id": "002",
+    "probability_cost": 0,
+    "granted_by": "observe:station"
+  },
+  {
+    "id": "dokja_whisper_broker",
+    "kind": "warning",
+    "title": "Dokja's Whisper: On the Broker",
+    "body": "Dokja went still when you named your sponsor. 'That constellation... it collects debts, not incarnations. Read every clause twice.'",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "dokja"
+  },
+  {
+    "id": "dokja_watching_you",
+    "kind": "omen",
+    "title": "Dokja Is Watching You",
+    "body": "Kim Dokja has noticed your battle personally. Whatever you just did, it was not in the story he remembers.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "dokja"
+  },
+  {
+    "id": "agenda_iron_gate_eastern_route",
+    "kind": "secret",
+    "title": "Discovered: Iron Gate wants the eastern route",
+    "body": "The Iron Gate wants the eastern route held at any cost — something it values moves through the dark there.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "investigate"
+  },
+  {
+    "id": "agenda_iron_gate_warden_vigil",
+    "kind": "secret",
+    "title": "Discovered: The Warden's vigil list",
+    "body": "The Silent Warden keeps a private list of incarnations under its protection. Names on it are never abandoned.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "investigate"
+  },
+  {
+    "id": "agenda_veiled_ledger_plaza_debts",
+    "kind": "secret",
+    "title": "Discovered: Debts owed in the plaza",
+    "body": "The Ledger claims every incarnation saved in the plaza owes it a favor — and it always collects.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "investigate"
+  },
+  {
+    "id": "agenda_veiled_ledger_ledger_names",
+    "kind": "secret",
+    "title": "Discovered: The Broker's ledger of names",
+    "body": "The Whispering Broker records true allegiances. A name written there can be traded like coin.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "investigate"
+  },
+  {
+    "id": "stream_echo",
+    "kind": "echo",
+    "title": "Echo Across the Stream",
+    "body": "Something impossible happened on another server, and the whole Star Stream heard it. You carry the echo.",
+    "scenario_id": null,
+    "probability_cost": 0,
+    "granted_by": "global",
+    "global": true
+  }
+]

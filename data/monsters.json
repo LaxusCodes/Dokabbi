@@ -1,0 +1,5 @@
+[
+  { "id": "lurker", "name": "Platform Lurker", "hp": 40, "power": 12, "tier": 1, "scenario": "001", "weakness_knowledge": "pattern_lurker", "weakness": "Insight reveals: vulnerable after lunging" },
+  { "id": "swarm", "name": "Tunnel Swarm", "hp": 60, "power": 16, "tier": 2, "scenario": "002", "weakness_knowledge": "danger_east", "weakness": "Area effects" },
+  { "id": "warden_husk", "name": "Husk of the Silent Warden", "hp": 120, "power": 24, "tier": 3, "scenario": "002", "weakness_knowledge": "value_east", "weakness": "Falls silent before a heavy strike" }
+]

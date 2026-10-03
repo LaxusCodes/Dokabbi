@@ -1,0 +1,22 @@
+[
+  {
+    "id": "first_scenario",
+    "canon": "Scenario 001 is survived quietly",
+    "check": { "kind": "event", "eventKind": "scenario_clear" }
+  },
+  {
+    "id": "community",
+    "canon": "No community forms in the plaza",
+    "check": { "kind": "flag", "key": "faction.survivor_community", "absentValue": "formed" }
+  },
+  {
+    "id": "timeline_intact",
+    "canon": "No predetermined event is altered",
+    "check": { "kind": "alters", "max": 0 }
+  },
+  {
+    "id": "east_sealed",
+    "canon": "The eastern route stays sealed",
+    "check": { "kind": "flag", "key": "area.east", "absentValue": "entered" }
+  }
+]

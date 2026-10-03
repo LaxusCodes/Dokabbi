@@ -1,0 +1,26 @@
+[
+  {
+    "id": "eastern_route",
+    "nebula": "iron_gate",
+    "title": "Control of the eastern scenario route",
+    "body": "The Iron Gate wants the eastern route held at any cost — something it values moves through the dark there."
+  },
+  {
+    "id": "warden_vigil",
+    "nebula": "iron_gate",
+    "title": "The Warden's vigil list",
+    "body": "The Silent Warden keeps a private list of incarnations under its protection. Names on it are never abandoned."
+  },
+  {
+    "id": "plaza_debts",
+    "nebula": "veiled_ledger",
+    "title": "Debts owed in the plaza",
+    "body": "The Ledger claims every incarnation saved in the plaza owes it a favor — and it always collects."
+  },
+  {
+    "id": "ledger_names",
+    "nebula": "veiled_ledger",
+    "title": "The Broker's ledger of names",
+    "body": "The Whispering Broker records true allegiances. A name written there can be traded like coin."
+  }
+]

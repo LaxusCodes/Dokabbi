@@ -1,0 +1,8 @@
+[
+  { "id": "fascinating", "emoji": "⭐", "excitement": 6, "drama": 4 },
+  { "id": "amusing", "emoji": "😂", "excitement": 4, "drama": 2 },
+  { "id": "outraged", "emoji": "😡", "excitement": 3, "drama": 8 },
+  { "id": "curious", "emoji": "👀", "excitement": 3, "drama": 3 },
+  { "id": "excited", "emoji": "🔥", "excitement": 8, "drama": 5 },
+  { "id": "displeased", "emoji": "💢", "excitement": 1, "drama": 6 }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "id": "masked_host",
+    "name": "The Masked Host",
+    "style": "chaotic",
+    "likes": ["probability_disturbed", "clash", "gambit", "underdog"],
+    "dislikes": ["defer", "stall", "refund"]
+  },
+  {
+    "id": "velvet_channel",
+    "name": "Velvet Channel",
+    "style": "dramatic",
+    "likes": ["sponsor_signed", "duel", "collision", "story"],
+    "dislikes": ["refund", "stall"]
+  },
+  {
+    "id": "quiet_frequency",
+    "name": "Quiet Frequency",
+    "style": "ominous",
+    "likes": ["altered", "intervention", "secret"],
+    "dislikes": ["defer", "stall", "refund"]
+  }
+]

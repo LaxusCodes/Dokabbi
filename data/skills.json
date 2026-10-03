@@ -1,0 +1,5 @@
+[
+  { "id": "insight", "name": "Insight", "grade": "Rare", "type": "Information", "cost": 5, "effect": "Reveal enemy weakness hint" },
+  { "id": "swift_strike", "name": "Swift Strike", "grade": "Common", "type": "Active", "cost": 8, "effect": "AGI-scaling damage" },
+  { "id": "judgment_flame", "name": "Flames of Judgment (stigma)", "grade": "Legendary", "type": "Active", "cost": 20, "effect": "High damage, consumes stigma charge" }
+]

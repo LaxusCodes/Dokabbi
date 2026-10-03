@@ -1,0 +1,5 @@
+[
+  { "id": "reader_card", "name": "Unknown Reader", "rarity": "Rare", "power": 10, "tags": ["reader", "survivor"] },
+  { "id": "warden_card", "name": "Dawn Warden", "rarity": "Hero", "power": 16, "tags": ["guardian"] },
+  { "id": "ember_card", "name": "Ember Judge", "rarity": "Legendary", "power": 24, "tags": ["judgment", "flame"] }
+]

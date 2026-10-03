@@ -1,0 +1,66 @@
+[
+  {
+    "id": "001",
+    "order": 1,
+    "type": "main",
+    "title": "First Scenario: Survive the Subway",
+    "description": "Original tutorial scenario. Survive until the timer ends. (Fan-made, not novel text.)",
+    "watcher": "judge_embers",
+    "choices": [
+      {
+        "id": "help",
+        "label": "Help fellow passengers",
+        "successRate": 0.7,
+        "success": { "text": "You reach for the stranger beside you. The car lurches, but hands grip your shoulders — five people, one moment, choosing not to look away. The Stream records it. A merciful name echoes where it is written.", "coins": 300, "xp": 60, "story": "merciful", "favor": 5, "npcTrust": [{ "npc": "survivor_17", "delta": 15 }] },
+        "fail": { "text": "Your hand finds empty air. Someone else moved first, or no one was there. The wound stays. But you are still standing when the doors open — and that is the only metric the Stream cares about.", "coins": 120, "xp": 40, "favor": 2, "npcTrust": [{ "npc": "survivor_17", "delta": 5 }] }
+      },
+      {
+        "id": "hide",
+        "label": "Hide and observe",
+        "successRate": 0.85,
+        "success": { "text": "You sink into the corner of your own mind and watch. The creature passes like a thought you almost had. The world is safer when you are smaller than its attention.", "coins": 200, "xp": 50, "favor": 1 },
+        "fail": { "text": "The dark has eyes too. You counted on invisibility, but the creature was counting on you being bold. Now it knows your position, and the crowd knows you hesitated.", "coins": 80, "xp": 30, "favor": 0 }
+      },
+      {
+        "id": "lure",
+        "label": "Lure the creature away",
+        "successRate": 0.5,
+        "success": { "text": "You cast yourself as bait into the tunnel's echo. The thing takes the hook — and the line holds. The Stream roars its approval: a single life traded for many is the kind of arithmetic the constellations admire.", "coins": 500, "xp": 90, "story": "impossible", "favor": 10 },
+        "fail": { "text": "The lure was real but the hook was not deep enough. You feel the creature's attention brush your spine as you retreat, tasting iron and knowing: some debts are paid in attention, not blood.", "coins": 100, "xp": 45, "favor": 3 }
+      },
+      {
+        "id": "forewarn",
+        "label": "Warn them about the lunge — you have seen this before",
+        "requiresKnowledge": "foreknow_001",
+        "altersWorld": true,
+        "successRate": 0.9,
+        "success": { "text": "You open your mouth and the words fall like scripture — the timing, the angle, the one breath before the car turns. The crowd moves as one body. The predetermined injury, which was supposed to happen here, does not. The Stream flinches.", "coins": 450, "xp": 85, "story": "impossible", "favor": 12, "npcTrust": [{ "npc": "survivor_17", "delta": 20 }] },
+        "fail": { "text": "Your warning arrives a half-breath late. Some dodge. Some do not. The car still turns, the lunge still finds flesh — but you told them it was coming, and that is a mercy no one expected to write.", "coins": 150, "xp": 50, "favor": 4, "npcTrust": [{ "npc": "survivor_17", "delta": 5 }] }
+      }
+    ]
+  },
+  {
+    "id": "002",
+    "order": 2,
+    "type": "main",
+    "title": "Second Scenario: The Gathering",
+    "description": "Reach the meeting point and choose who to trust.",
+    "watcher": "silent_warden",
+    "choices": [
+      {
+        "id": "lead",
+        "label": "Lead the group",
+        "successRate": 0.65,
+        "success": { "text": "You raise your voice and the crowd leans. A leader is not born in the light — they are forged in the moment everyone else looks at the ceiling and someone decides to look at the door. Time saved, lives kept. The constellation watching notes the arithmetic.", "coins": 350, "xp": 70, "favor": 6 },
+        "fail": { "text": "Your command lands on ears that were already turning elsewhere. The group wavers, fractures, and you push through alone. Being ahead of the crowd is its own kind of survival — you just cannot share it with anyone.", "coins": 150, "xp": 45, "favor": 2 }
+      },
+      {
+        "id": "scout",
+        "label": "Scout ahead alone",
+        "successRate": 0.6,
+        "success": { "text": "You move ahead while the others hold position. The path reveals itself — a seam in the wall, a ventilation shaft, a gap the architecture forgot to mention. You found what the crowd could not: that the world was always broken here, and someone just had to look.", "coins": 320, "xp": 65, "favor": 4 },
+        "fail": { "text": "The dark answers your steps before you see it. A trap snaps shut where your foot would have been. You retreat with a bruised shin and the knowledge that some paths are only visible from the wrong end.", "coins": 110, "xp": 40, "favor": 1 }
+      }
+    ]
+  }
+]

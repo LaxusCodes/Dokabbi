@@ -1,0 +1,11 @@
+node_modules/
+.env
+data/starstream.db
+data/starstream.db-journal
+data/starstream.db-shm
+data/starstream.db-wal
+.env
+*.db
+*.tar
+node_modules/
+node_modules.gitignore/

@@ -1,0 +1,5 @@
+[
+  { "id": "novice_reader", "name": "Novice Reader", "grade": "Rare", "effect": "+5 INT; more info from cleared scenarios", "evolution": "advanced_reader" },
+  { "id": "advanced_reader", "name": "Advanced Reader", "grade": "Hero", "effect": "+10 INT; detect hidden choices", "evolution": "story_reader" },
+  { "id": "tenacious_body", "name": "Tenacious Body", "grade": "Common", "effect": "+5 max HP" }
+]

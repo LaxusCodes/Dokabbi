@@ -1,0 +1,18 @@
+[
+  {
+    "id": "iron_gate",
+    "name": "Iron Gate",
+    "alignment": "guardians",
+    "description": "Constellations who believe incarnations must be shielded, whatever the cost.",
+    "constellations": ["judge_embers", "silent_warden"],
+    "agendas": ["eastern_route", "warden_vigil"]
+  },
+  {
+    "id": "veiled_ledger",
+    "name": "Veiled Ledger",
+    "alignment": "opportunists",
+    "description": "Constellations who believe every debt — of coin, fate, or information — must be paid.",
+    "constellations": ["veiled_trickster", "whispering_broker"],
+    "agendas": ["plaza_debts", "ledger_names"]
+  }
+]
