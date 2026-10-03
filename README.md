@@ -8,7 +8,7 @@ A fan-made, ORV-inspired text RPG that lives entirely inside Discord. Players re
 
 ---
 
-## Features
+## Features.
 
 - **Two command layers** — slash commands *and* a prefix router (`orv …`), with short aliases (`orv s`, `orv reg`, `orv rk`) and a `Jump to…` dropdown on hub screens.
 - **Scenarios & chapters** — server-wide choices, parallel branches, Director verdicts, and branch collisions settled in shared combat.
