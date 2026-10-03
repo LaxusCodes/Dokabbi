@@ -1,6 +1,6 @@
 # Dokabbi — ORV Discord RPG
 
-**Owner:** [LaxusCodes](https://github.com/LaxusCodes)...
+**Owner:** [LaxusCodes](https://github.com/LaxusCodes) !
 
 A fan-made, ORV-inspired text RPG that lives entirely inside Discord. Players register an incarnation, survive server-wide scenarios, collect cards and characters, fight in PvE/PvP, found factions and shops, and write a shared history the whole server can read back.
 
